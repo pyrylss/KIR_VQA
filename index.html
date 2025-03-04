@@ -58,9 +58,9 @@
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Pyry Satama</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Abduljalil Radman</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jorma Laaksonen</a>
                   </span>
                   </div>
 
@@ -122,7 +122,7 @@
   </div>
 </section>
 
-
+<!--
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -139,7 +139,7 @@
   </div>
 </section>
 <!-- End teaser video -->
-
+-->
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -148,7 +148,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Knowledge-based visual question answering (VQA) requires models to leverage external knowledge beyond the given image to answer the stated question. While large language models (LLMs) can implicitly encode such knowledge, their purely text-based pre-training makes their reasoning ability less suited for visually grounded tasks, and most LLM-based VQA methods still fail to explicitly retrieve relevant information. In this paper, we propose Knowledge-Integrated Reasoning for VQA (KIR-VQA), a novel framework that augments prompt-guided caption generation with external knowledge retrieval and integrates these knowledge-guided captions into the LLM's prompt. Moreover, we fine-tune a vision-language transformer, BEiT3, for VQA and leverage its latent answer space for in-context example selection. Our KIR-VQA ensures that the LLM receives explicit information grounded in both the question and the image, rather than relying solely on its implicit knowledge for the VQA task. Extensive experiments on the OK-VQA and A-OKVQA datasets demonstrate the effectiveness of our proposed KIR-VQA framework, surpassing both open-source and proprietary LLM-based approaches.
           </p>
         </div>
       </div>
@@ -165,32 +165,11 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/framework.pngg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Overview of KIR-VQA. The ES module leverages BEiT3's latent answer space to select N examples (E). The QGC module generates question-guided captions (QGCs) for each image-question pair, while the Retriever retrieves knowledge from the Google Search (GS) corpus. The KGC module then fuses each image, question, and retrieved knowledge to generate knowledge-guided captions (KGCs). The KEP module builds k knowledge-enriched prompts, leveraging E, QGCs, and KGCs. Finally, LLaMA 2 processes these prompts to generate k answer predictions. The most frequent prediction is chosen as the final answer.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
