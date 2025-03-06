@@ -181,7 +181,11 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Examples of KIR-VQA answers</h2>
       <div id="results-carousel" class="carousel results-carousel">
+        <h2 class="overlay-text has-text-left">
+          We show examples of OK-VQA answers from two LLM based approaches, Simple and Prophet, similar to our mehtod and from our KIR-VQA. The main difference between KIR-VQA and these two methods of comparison is the retrieval mechanism of KIR-VQA.
+        </h2>
        <div class="item">
         <!-- Your image here -->
         <img src="static/images/dog.jpg" alt="MY ALT TEXT" class="carousel-image"/>
@@ -275,26 +279,42 @@
   }
 </style>
 
-<!-- Main table -->
+<!-- Carousel 2 -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h2 class="title is-3">VQA performance</h2>
-      <div class="single-image-container">
-        <div class="image-wrapper">
-          <h2 class="overlay-text has-text-left">
-           We present a comparison of our KIR-VQA method with state-of-the-art approaches on the direct answer (DA) and multiple-choice (MC) VQA tasks, grouped by the primary source of external knowledge used: 1) Retrieval-Augmented Methods that query external knowledge bases, 2) Extensive Multimodal Pre-training, 3) Proprietary LLMs, and 4) Open-Source LLMs.
-          </h2>
-          <img src="static/images/main_table.PNG" alt="MY ALT TEXT"/>
-        </div>
+    <div class="container">
+      <h2 class="title is-3">Examples of KIR-VQA answers</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <h2 class="overlay-text has-text-left">
+          We show examples of
+        </h2>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/dog.jpg" alt="MY ALT TEXT" class="carousel-image"/>
         <h2 class="subtitle has-text-centered">
-          Comparison with state-of-the-art methods.
+          Question: How heavy are these animals? <br>
+          Answer (Simple): 20 pounds <br>
+          Answer (Prophet): heavy <br>
+          Answer (KIR-VQA): 50 pounds <br>
+          Ground Truth: 50 pounds
         </h2>
       </div>
-    </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/doughnut.jpg" alt="MY ALT TEXT" class="carousel-image"/>
+        <h2 class="subtitle has-text-centered">
+          Question: In what year was this dessert first introduced? <br>
+          Answer (Simple): 1930 <br>
+          Answer (Prophet): 1930 <br>
+          Answer (KIR-VQA): 1847 <br>
+          Ground Truth: 1847 
+        </h2>
+      </div>
   </div>
+</div>
+</div>
 </section>
-<!-- End main table -->
+<!-- End carousel 2-->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
