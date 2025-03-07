@@ -134,11 +134,11 @@ body {
 }
 
 .blue-text {
-  color: blue;
+  color: blue !important;
 }
 
 .red-text {
-  color: red;
+  color: blue !important;
 }
 
 
