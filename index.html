@@ -274,9 +274,9 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Examples of knowledge-guided captioning.</h2>
+      <h2 class="title is-3">Examples of knowledge-guided captioning</h2>
       <h2 class="overlay-text has-text-left">
-          We show examples of the effect of captions from KGC module. The captions in red are generated leveraging external knowledge and the caption in blue are generated without. The captions in blue are not part of KIR-VQA, they represent an alternate scenario where retrieved external knowledge is not incorporated.
+          We show examples of the effect of captions from the Knowledge-Guided Captioning (KGC) module. The captions in red are generated leveraging external knowledge and the caption in blue are generated without. The captions in blue are not part of KIR-VQA, they represent an alternate scenario where retrieved external knowledge is not incorporated.
         </h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
@@ -292,9 +292,9 @@
           subway trolley, moving down a street in a city, <br>
           a trolley bus runs away from a large building, <br>
           a large tram is going down a busy street, <br>
-          a bus driving down a street in seattle, <br>
-          a city bus driving down a street with a sign of tokyo on the front <br>
-          End of Context: <br>
+          <span class="red-text">a bus driving down a street in seattle,</span> <br>
+          <span class="blue-text">a city bus driving down a street with a sign of tokyo on the front</span> <br>
+          End of Context <br>
           <br>
           Question: What city is mentioned on the front of the bus? <br>
           Answer: seattle <br>
@@ -306,7 +306,22 @@
         <!-- Your image here -->
         <img src="static/images/poles.jpg" alt="MY ALT TEXT" class="carousel-image"/>
         <h2 class="subtitle has-text-centered">
-          text
+          Start of Context: <br>
+          two snow skiers passing each other on a trail, <br>
+          these couple of people are skiing the snowy path, <br>
+          there two people skiing down a snowy trail, <br>
+          two women cross country skiing down a snow-covered trail, <br>
+          a couple of skiers traveling down a snow-covered road, <br>
+          picture of two cross country skiers on a ski trail while two people are walking, <br>
+          two ladies ski their skis on a snowy path, <br>
+          a couple of women that are skiing down a country road, <br>
+          <span class="red-text">a group of people skiing down a snowy slope with poles,</span> <br>
+          <span class="blue-text">a group of people skiing down a snow-covered slope</span> <br>
+          End of Context <br>
+          Question: What is used to keep their balance? <br>
+          Answer: poles <br>
+          Answer Without Retrieved Knowledge: skis <br>
+          GT: ski poles, poles
         </h2>
       </div>
   </div>
