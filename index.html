@@ -274,16 +274,32 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Examples of KIR-VQA answers</h2>
+      <h2 class="title is-3">Examples of knowledge-guided captioning.</h2>
       <h2 class="overlay-text has-text-left">
-          We show examples of
+          We show examples of the effect of captions from KGC module. The captions in red are generated leveraging external knowledge and the caption in blue are generated without. The captions in blue are not part of KIR-VQA, they represent an alternate scenario where retrieved external knowledge is not incorporated.
         </h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
         <img src="static/images/seattle.jpg" alt="MY ALT TEXT" class="carousel-image"/>
         <h2 class="subtitle has-text-centered">
-          text
+          Start of Context: <br>
+          a train going down a street next to a highrise apartment block, <br>
+          a street car trolley travels down the street on the street, <br>
+          a commuter bus driving on streetcar tracks in city, <br>
+          a large long electric troll trolley bus driving down the street, <br>
+          a tram is driving down the road on its way home, <br>
+          subway trolley, moving down a street in a city, <br>
+          a trolley bus runs away from a large building, <br>
+          a large tram is going down a busy street, <br>
+          a bus driving down a street in seattle, <br>
+          a city bus driving down a street with a sign of tokyo on the front <br>
+          End of Context: <br>
+          <br>
+          Question: What city is mentioned on the front of the bus? <br>
+          Answer: seattle <br>
+          Answer Without Retrieved Knowledge: tokyo <br>
+          GT: seattle, westlake
         </h2>
       </div>
       <div class="item">
